@@ -7,7 +7,7 @@ This repository contains the Flask-based web application for detecting Personal 
 ## Features
 
 - **YOLOv8 Detection Model**: Efficient and accurate object detection.
-- **10 PPE Classes**: Trained on a dataset with over 1,000 images.
+- **10 PPE Classes**: Trained on a dataset with over 700 images.
 - **Real-Time Detection**: Analyze video input for PPE compliance.
 - **Data Storage**: Detection results are stored in a MySQL database.
 - **Flask Web Application**: Simple web interface for uploading and analyzing video files.
@@ -52,6 +52,21 @@ https://universe.roboflow.com/roboflow-universe-projects/construction-site-safet
    ```
    http://127.0.0.1:5000
    ```
+## Creating an Executable File
+
+To distribute your project as a standalone `.exe` file, follow these steps:
+
+1. Install PyInstaller:
+   ```bash
+   pip install pyinstaller
+   ```
+
+2. Convert the Python script to an executable:
+   ```bash
+   pyinstaller --onefile --windowed app.py
+   ```
+
+3. The `.exe` file will be located in the `dist` folder. Share this file for easy execution without requiring Python installation.
 
 ## Usage
 
