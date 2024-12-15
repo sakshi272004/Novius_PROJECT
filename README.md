@@ -30,7 +30,7 @@ https://universe.roboflow.com/roboflow-universe-projects/construction-site-safet
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sakshi272004/Novius_PROJECT
+   git clone https://github.com/sakshi272004/TYPROJECT_PPE_DETECTION
    cd your-repo-name
    ```
 
