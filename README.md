@@ -1,2 +1,98 @@
 # Novius_PROJECT_
 Deep learning project
+# Flask PPE Detection Project
+
+This repository contains the Flask-based web application for detecting Personal Protective Equipment (PPE) using the YOLOv8 model. The application is designed to analyze video input and identify the presence of PPE, such as helmets, gloves, and other safety gear.
+
+## Features
+
+- **YOLOv8 Detection Model**: Efficient and accurate object detection.
+- **10 PPE Classes**: Trained on a dataset with over 1,000 images.
+- **Real-Time Detection**: Analyze video input for PPE compliance.
+- **Data Storage**: Detection results are stored in a MySQL database.
+- **Flask Web Application**: Simple web interface for uploading and analyzing video files.
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Python 3.8+
+- MySQL Server
+- Required Python libraries (listed in `requirements.txt`)
+
+## Dataset
+
+The dataset used for training the YOLOv8 model is hosted on [Roboflow](https://roboflow.com/). You can download the dataset using the link below:
+https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety/dataset/28
+
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sakshi272004/Novius_PROJECT
+   cd your-repo-name
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Configure MySQL:
+   - Create a MySQL database.
+   - Update the database credentials in `flaskapp.py`.
+
+4. Run the Flask application:
+   ```bash
+   python flaskapp.py
+   ```
+
+5. Open the application in your browser:
+   ```
+   http://127.0.0.1:5000
+   ```
+
+## Usage
+
+- Upload a video file via the web interface.
+- The system will analyze the video and display detection results.
+- Results, including detected PPE classes and confidence scores, will be stored in the MySQL database.
+
+## Project Structure
+
+```
+.
+├── flaskapp.py           # Flask application
+├── YOLO_Video.py         # detection file
+├── requirements.txt      # Required Python libraries
+├── templates/            # HTML templates for the web interface
+├── static/               # Static assets (CSS, JS, images)
+├── YOLO_Weights/         # YOLOv8 model files              
+└── README.md             # Project documentation
+```
+
+## Suggestions for Improvement
+
+1. **Dataset Expansion**:
+   - Include more diverse PPE images for improved detection.
+
+2. **Model Optimization**:
+   - Experiment with model compression techniques for faster inference.
+
+3. **Real-Time Video Streaming**:
+   - Add support for analyzing live video streams.
+
+4. **Advanced Analytics**:
+   - Integrate advanced analytics and visualizations for detection data.
+
+5. **Deployment**:
+   - Host the application on a docker for remote accessibility.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+For any questions or suggestions, please feel free to open an issue or contact me directly!
